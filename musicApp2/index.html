@@ -10,6 +10,7 @@
 	<script src="js/top.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="js/interface.js"></script>
+	<script src="js/musicMain.js"></script>
 	<link rel="stylesheet" href="css/mkugou.css">
 	<link rel="stylesheet" href="css/main.css">
 	<style>
@@ -17,9 +18,14 @@
      		height: auto;
      		width: auto;
      		position: absolute;
-     		top:120px;
+     		top:100px;
      		display: none;
      		
+     	}
+
+     	#main{
+     		height: auto;
+     		width: 900px;
      	}
 	</style>
 </head>
@@ -37,12 +43,13 @@
 <script>
 	window.onload=function(){
 		MusicTop({
-	          nodeID:'top',
-	          bgImg:'images/logo.png'
+	          nodeID:'top'
+	          // bgImg:'images/logo.png'
+	          
 		});
 		menu({
 			nodeID:'menu',
-			items:['新歌','排行','歌单','歌手',"1",'2']
+			items:['新歌','排行','歌单','歌手']
 		});
 
 		interface({
@@ -56,7 +63,13 @@
 		  // search.nodeID="search";
 		  search.searchDOM=document.getElementById('search');
 		  search.append();
-		  search.search();
+		  // search.search();
+
+		  musicMain({
+		  	nodeID:'main'
+		  });
+     
+
 
 	}
 
