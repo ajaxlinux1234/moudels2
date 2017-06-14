@@ -1,0 +1,66 @@
+     .interface{
+			width:100%;
+			height: 155px;
+			/*min-width: 350px;
+			max-width: 500px;*/
+			/*position: relative;*/
+		}
+		.min{
+			width: 100%;
+			height: 155px;
+			background:rgba(0,0,0,.9);
+			position: relative;
+			/*display: none;*/
+		}
+
+		.min_left{
+			position: absolute;
+			height: 90px;
+			width: auto;
+			left: 25px;
+			top:25px;
+		}
+		.min_left img{
+			height: 90px;
+			width: auto;
+			border-radius: 5px;
+		}
+		.min_right{
+			height: 80px;
+			position: absolute;
+			width: auto;
+			top: 35px;
+			right: 50px;
+			line-height: 80px;
+		}
+		.min_right i{
+		display: block;
+		float: left;
+		margin-left: 20px;
+		box-sizing: border-box;	
+		-moz-box-sizing: border-box;	
+		-webkit-box-sizing: border-box;	
+		height: 42px;
+        width: 42px;
+		}
+		.min_right i:hover{
+			cursor: pointer;
+		}
+
+		.btn1{
+        background: url('../images/pause_icon.png');
+		}
+		.btn2{
+        background: url('../images/next_icon.png');
+       
+		}
+		.btn3{
+        background: url('../images/download_icon.png');
+        
+		}
+
+		.btn3 a{
+			display: block;
+			height: 100%;
+			width: 100%;
+		}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>index</title>
+	<script src="http://apps.bdimg.com/libs/vue/1.0.14/vue.js"></script>
+	<script src="https://cdn.bootcss.com/vue-resource/1.3.1/vue-resource.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/top.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/interface.js"></script>
+	<link rel="stylesheet" href="css/mkugou.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+     	#search{
+     		height: auto;
+     		width: auto;
+     		position: absolute;
+     		top:120px;
+     		display: none;
+     		
+     	}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="top"></div>
+	<div id="menu"></div>
+	<div id="banner"></div>
+	<div id="bottom"></div>
+	<div id="interface"></div>
+	<div id="main"></div>
+	<div id="search"></div>
+</div>
+</body>
+<script>
+	window.onload=function(){
+		MusicTop({
+	          nodeID:'top',
+	          bgImg:'images/logo.png'
+		});
+		menu({
+			nodeID:'menu',
+			items:['新歌','排行','歌单','歌手',"1",'2']
+		});
+
+		interface({
+			nodeID:'interface',
+			position:{left:'0px',
+			          top:'500px'
+			         }
+		});
+
+		//search部分
+		  // search.nodeID="search";
+		  search.searchDOM=document.getElementById('search');
+		  search.append();
+		  search.search();
+
+	}
+
+</script>
+</html>

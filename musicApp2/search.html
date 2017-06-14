@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<script src="js/vue.min.js"></script>
+	<script src="js/vue-resource.min.js"></script>
+	<link rel="stylesheet" href="css/mkugou.css">
+	<link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+<div id="search"> 
+	<!-- <input class="search_input" type="text" placeholder="歌手/歌名/拼音"><i class="search_input_icon"></i></input>
+	<a href="javascript:;" class="search_btn">搜索</a>
+	<div class="seach_main">
+		<div class="search_result_num"></div>
+		<div class="search_result">
+			<ul>
+				<li>伍佰&China Blue - 厉害 - 2012生命的现场<i></i></li>
+				<li>MadeD - 厉害<i></i></li>
+			</ul>
+		</div> -->
+	</div>
+</div>
+<script src="js/search.js"></script>
+<script>
+  // console.log(new search());
+  // var mySetting=new search();
+  // search.settings({
+  // 	nodeID:'search'
+  // });
+  // search.methods.append();
+
+  search.searchDOM=document.getElementById('search');
+  // console.log(search.nodeID);
+  search.append();
+  // search.search();
+  search.position={
+  	top:"100px"
+  	// left:"100px"
+  };
+  search.Boxposition();
+  search.search();
+  
+
+
+
+  
+</script>
+</body>
+</html>

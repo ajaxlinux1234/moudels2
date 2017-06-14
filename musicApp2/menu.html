@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" href="css/mkugou.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+	<div id="menu">	
+	</div>
+
+	<!-- <div class="container"></div> -->
+    
+</body>
+<script src="js/vue.min.js"></script>
+<script src="js/vue-resource.min.js"></script>
+<script src="js/menu.js"></script>
+<script>
+	menu({
+		nodeID:"menu",
+		items:['新歌','排行','歌单','歌手','你很叼啊']
+		// position:{left:"100px",top:"200px"},
+		// bottomColor:"green"
+	});
+
+
+   var vm=new Vue({
+    	el:"#menu",
+    	data:{
+
+    	},
+    	methods:{
+    		get:function(){
+    			window.baidu={};
+    			window.baidu.sug=function(json){
+    				window.cb(json);
+    			};
+    			this.$http.jsonp('http://so.service.kugou.com/v1/word_nofocus',{
+    				params:{},
+    				jsonpCallback:'callback'
+    			}).then(function(res){
+    				console.log(res.data);
+    			},function(res){
+    				alert(res.status);
+    			})
+    		}
+    	}
+    });	
+    document.querySelectorAll('a')[0].addEventListener('click',function(){
+	   	vm.get();
+	   });
+  
+
+
+
+
+
+
+</script>
+</html>

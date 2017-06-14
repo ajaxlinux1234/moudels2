@@ -1,0 +1,44 @@
+       .top_a{
+       		display: block;
+       		height: 100%;
+       		width: 100%;
+       	}
+	   .topBox{
+			width: 100%;
+			background-color:blue;
+			position: relative;
+			height: 50px;
+			/*max-width: 500px;
+			min-width: 350px;*/
+		}
+       .logo{
+       	background: url(../images/logo.png) no-repeat;
+       	height: 40px;
+       	width: 155px;
+       	position: absolute;
+       	top: 6px;
+       	left: 10px;
+
+       }
+
+       .download{
+       	display: inline-block;
+       	width: auto;
+       	height: 35px;
+       	text-align: center;
+       	line-height: 30px;
+       	position: absolute;
+       	left: 180px;
+       	top:5px;
+       	color: white;
+       	border:1px solid white;
+
+       }
+       .search_icon{
+       	background: url(../images/top_search.svg) no-repeat;
+       	height: 20px;
+       	width: 20px;
+       	position: absolute;
+       	top:16px;
+       	right:10px;
+       }

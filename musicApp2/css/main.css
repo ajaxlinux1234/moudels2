@@ -1,0 +1,239 @@
+		#container{
+			height: 900px;
+			width: 100%;
+		}
+		/*以上为页面样式部分*/
+		.top_a{
+		display: block;
+		height: 100%;
+		width: 100%;
+	     }
+		.topBox{
+			width: white;
+			background-color:blue;
+			position: relative;
+			height: 50px;
+			
+		}
+       .logo{
+       	background: url(../images/logo.png) no-repeat;
+       	height: 40px;
+       	width: 155px;
+       	position: absolute;
+       	top: 6px;
+       	left: 10px;
+
+       }
+
+       .download{
+       	display: inline-block;
+       	width: auto;
+       	height: 35px;
+       	text-align: center;
+       	line-height: 30px;
+       	position: absolute;
+       	left: 180px;
+       	top:5px;
+       	color: white;
+       	border:1px solid white;
+
+       }
+       .search_icon{
+       	background: url(../images/top_search.svg) no-repeat;
+       	height: 20px;
+       	width: 20px;
+       	position: absolute;
+       	top:16px;
+       	right:10px;
+       }
+       /*以上为top部分*/
+       .menu{
+			width: 500px;
+			height: 50px;
+			box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.25);
+			-ms-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.25);
+			-webkit-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.25);
+			-moz-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.25);
+			-o-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.25);
+		}
+		.menu ul{
+			height: 100%;
+			width: 100%;
+			line-height: 50px;
+			-webkit-box-sizing: border-box; 
+			-moz-box-sizing:border-box; 
+			box-sizing:border-box; 
+
+		}
+
+		.menu ul li{
+			float: left;
+			margin-left: 8%;
+            height: 100%;
+            width: auto;
+
+
+		}
+		.menu ul li a{
+			-webkit-box-sizing: border-box; 
+			-moz-box-sizing:border-box; 
+			box-sizing:border-box; 
+			display: block;
+			height: 100%;
+			width: auto;
+			border-bottom: 3px solid blue;
+		}
+
+		.container{
+			height: 400px;
+			width: 400px;
+			border:1px solid gray;
+		}
+		/*以上为menu部分*/
+		.interface{
+			width:100%;
+			height: 155px;
+			position: absolute;
+		}
+		.min{
+			width: 100%;
+			height: 155px;
+			background:rgba(0,0,0,.9);
+			position: relative;
+			/*display: none;*/
+		}
+
+		.min_left{
+			position: absolute;
+			height: 80px;
+			width: auto;
+			left: 25px;
+			top:25px;
+		}
+		.min_left img{
+			height: 90px;
+			width: auto;
+			border-radius: 5px;
+		}
+		.min_right{
+			height: 80px;
+			position: absolute;
+			width: 200px;
+			top: 35px;
+			right: 50px;
+			line-height: 80px;
+		}
+		.min_right i{
+		display: block;
+		float: left;
+		margin-left: 20px;
+		box-sizing: border-box;	
+		-moz-box-sizing: border-box;	
+		-webkit-box-sizing: border-box;	
+		height: 42px;
+        width: 42px;
+		}
+		.min_right i:hover{
+			cursor: pointer;
+		}
+
+		.btn1{
+        background: url('../images/pause_icon.png');
+		}
+		.btn2{
+        background: url('../images/next_icon.png');
+       
+		}
+		.btn3{
+        background: url('../images/download_icon.png');
+        
+		}
+
+		.btn3 a{
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+		/*以上为interface部分*/
+
+
+
+		.search{
+			width: 100%;
+			height: auto;
+			min-width: 350px;
+			max-width: 500px;
+			margin-left: 10px;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+			-webkit-box-sizing:border-box; /* Safari */
+
+
+		}
+
+		#i1{
+			display: block;
+			height: 50px;
+			width: 50px;
+			background: url('../images/goback.png') no-repeat;
+			position: relative;
+			top:-20px;
+		}
+		
+		.search_input{
+			height: 50px;
+			width: 80%;
+			border-radius: 5px;
+			padding-left: 40px;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+			-webkit-box-sizing:border-box; /* Safari */
+
+		}
+		.search_input_icon{
+			display: block;
+			height: 40px;
+			width: 40px;
+			background: url('../images/top_search.svg') no-repeat;
+			position: relative;
+			top:-35px;
+			left: 5px;
+		}
+		.search_btn{
+			display: inline-block;
+			height: 50px;
+			width: 70px;
+			background: #e5e5e5;
+			line-height: 50px;
+			text-align: center;
+			border-radius: 5px;
+			color: #959595;
+			position: relative;
+			top:-90px;
+			right: -82%;
+
+		}
+
+		.search_main{
+			width: 100%;
+			height: auto;
+		}
+		.search_result{
+			width: 100%;
+			height: auto;
+		}
+
+		.search_result ul{
+			height: auto;
+			width: 100%;
+		}
+		.search_result ul li{
+			height: 100px;
+			width: 100%;
+			line-height: 100px;
+			text-align: center;
+			border-bottom: 1px solid gray;
+
+		}
+
+                   /*以上为search部分*/

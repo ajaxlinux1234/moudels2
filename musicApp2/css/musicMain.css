@@ -1,0 +1,153 @@
+         .musicCeng{
+			
+			height:1113px;
+			width: 100%;
+			background: url("http://singerimg.kugou.com/uploadpic/softhead/200/20160627/20160627151133261295.jpg") no-repeat;
+			background-size: contain;
+			filter:blur(15px);
+			-o-filter:blur(15px);
+			-webkit-filter:blur(15px);
+			-ms-filter:blur(15px);
+			-moz-filter:blur(15px);
+			z-index: 1;
+			/*background: rgba(0,0,0,.4);*/
+		}
+
+		.musicMain{
+			height:1113px;
+			width: 100%;
+			z-index: 2;
+			position: relative;
+			top:-1113px;
+			background: rgba(0,0,0,.4);
+		}
+		.main_img{
+			position: absolute;
+			width: 100%;
+			top:10%;
+			text-align: center;
+
+
+		}
+		.lyric{
+			height: 20px;
+			width: 100%;
+			position: absolute;
+			top: 30%;
+			/*left: 10%;*/
+			color: #afabac;
+                                text-align: center;
+		}
+         
+
+                      .main_progress{
+                      	position: absolute;
+                      	top:60%;
+                      	text-align: center;
+                      	width: 100%;
+                      }
+
+
+      		/*下面为兼容ie9的rang滑动样式*/
+   
+		     input[type=range] {
+		    -webkit-appearance: none;
+		    width: 500px;
+		    background: rgba(0,0,255,.5);
+		}
+
+		input[type=range]::-ms-track {
+		    height: 25px;
+		    border-radius: 10px;
+		    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
+		    border-color: transparent; /*去除原有边框*/
+		    color: transparent; /*去除轨道内的竖线*/
+		}
+
+		input[type=range]::-ms-thumb {
+		    border: solid 0.125em rgba(205, 224, 230, 0.5);
+		    height: 25px;
+		    width: 25px;
+		    border-radius: 50%;
+		    background: #ADFF2F;
+		    margin-top: -5px;
+		    box-shadow: 0 .125em .125em #3b4547;
+		}
+
+		input[type=range]::-ms-fill-lower {
+		    /*进度条已填充的部分*/
+		    height: 22px;
+		    border-radius: 10px;
+		    background: #ADFF2F;
+		}
+
+		input[type=range]::-ms-fill-upper {
+		    /*进度条未填充的部分*/
+		    height: 22px;
+		    border-radius: 10px;
+		    background: #ADFF2F;
+		     
+		}
+
+		input[type=range]:focus::-ms-fill-lower {
+		    background: #ADFF2F;
+ 		}
+
+		input[type=range]:focus::-ms-fill-upper {
+		    background: #ADFF2F;
+ 		}
+
+		input[type=range]::-webkit-slider-thumb {
+		    -webkit-appearance: none;
+		    height: 25px;
+		    width: 25px;
+		    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+		    background: green; 
+		    border-radius: 50%; /*外观设置为圆形*/
+		    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+		    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+		}
+
+
+
+		.main_control{
+			height: 100px;
+			width: 100%;
+			position: absolute;
+			top:70%;
+			text-align: center;
+		}
+
+		.main_control  i{
+			float: left;
+			display: block;
+			height: 100px;
+			width: 100px;
+			/*background:rgba(0,0,0,.4);*/
+			margin-left:20px;
+			/*background: black;*/
+			margin-left: 18%;
+			background-size: cover;
+		}
+
+		.btn_pre{
+			background: url('../images/play_prev.png') no-repeat;
+			z-index: 2000;
+			
+		}
+
+		.btn_play{
+		   background: url('../images/play_pause.png') no-repeat;
+		   z-index: 2000;
+
+		}
+
+		.btn_next{
+			background: url('../images/play_next.png') no-repeat;
+			z-index: 2000;
+
+		}
+
+
+
+				
